@@ -40,15 +40,15 @@ def save_data():
     
     else:
         try:
-            with open('29-Day-Password-Manager/data.json', 'r') as data_file:
+            with open('data.json', 'r') as data_file:
                 data = json.load(data_file)
 
         except FileNotFoundError:
-            with open("29-Day-Password-Manager/data.json", 'w') as data_file:
+            with open("data.json", 'w') as data_file:
                 json.dump(new_data, data_file, indent=4)
         else:
             data.update(new_data)
-            with open("29-Day-Password-Manager/data.json", 'w') as data_file:
+            with open("data.json", 'w') as data_file:
                 json.dump(data, data_file, indent=4)
 
         finally:
@@ -61,7 +61,7 @@ def save_data():
 def find_password():
     search_web = (web_input.get()).title()
     try:
-        with open('29-Day-Password-Manager/data.json', 'r') as data_file:
+        with open('data.json', 'r') as data_file:
             data = json.load(data_file)
     except:
         msgbx.showinfo(title="Error", message="No Data File Found")
@@ -83,7 +83,7 @@ window.title("Password Manager")
 window.config(padx=50, pady=50)
 
 canvas = Canvas(width=200, height=200, highlightthickness=0)
-logo_img = PhotoImage(file="29-Day-Password-Manager/logo.png")
+logo_img = PhotoImage(file="logo.png")
 canvas.create_image(100, 100, image=logo_img)
 canvas.grid(column=1, row=0)
 
