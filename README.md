@@ -4,8 +4,10 @@ Password Manager is a graphical user interface (GUI) program built in Python tha
 # Screenshots
 ![image](https://user-images.githubusercontent.com/63827449/229062453-14f6b9fd-2b6c-4708-9395-b88c5224d3b5.png)     
 - Seaching through stored json file   
+ 
 ![image](https://user-images.githubusercontent.com/63827449/229080112-79db034a-b3ab-4b24-8f53-c337822f33e1.png)   
 - Message when the data in not found    
+ 
 ![image](https://user-images.githubusercontent.com/63827449/229080072-fb61606d-e8e1-49aa-9cab-004cb5c5854a.png)
 
 
